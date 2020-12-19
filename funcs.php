@@ -20,18 +20,18 @@ function emailAttach()
     //set_time_limit(1300);
     //масив з адресами email, з яких будуть братись вкладення
     $names = array(
-        //'Bii@rl.ua',
-        'lz@rl.ua',
-        'nec.if.ua@gmail.com',
-        //'news@tdb.com.ua',
-        'dealers_price@tdb.com.ua',
-        'noreply@ktc.ua',
-        'v.palamarchuk@ipcgroup.com.ua'
+        //'test@test.com',
+        'test@test.com',
+        'test@test.com',
+        //'test@test.com',
+        'test@test.com',
+        'test@test.com',
+        'test@test.com'
     );
 
     $hostname = '{imap01.servage.net:993/imap/ssl/novalidate-cert}INBOX';
-    $username = 'price@nec.if.ua'; # например somebody@gmail.com
-    $password = 'KjfIOOE204uu';
+    $username = 'test@test.com'; # например somebody@gmail.com
+    $password = '********';
 
 
     $inbox = imap_open($hostname, $username, $password) or die('Cannot connect to servage.net: ' . imap_last_error());
@@ -152,9 +152,9 @@ function emailAttach()
 // Функція для завантаження файлів на віддалений сервер по FTP
 function uploadFtp($fileWith, $fileTo)
 {
-    $ftp_serv = 'ftp01.servage.net';
-    $ftp_user = '1010264_necadm';
-    $ftp_pass = 'Jhe982Uye2';
+    $ftp_serv = '********.net';
+    $ftp_user = '*********';
+    $ftp_pass = '*********';
 
     //Встановити з'єднання або вийти
     $conn_id = ftp_connect($ftp_serv) or die("Не вдалось з'єднатись з $ftp_serv \n");
@@ -241,9 +241,9 @@ function xlsxToCsv($filesXlsx)
 function getFileToFtp()
 {
     $local_file = __DIR__ . '/attach' . '/mobiking' . '.xml';
-    $ftp_server = 'ftpclient.mobiking.com.ua';
-    $ftp_user_name = 'Site_NecIfUa';
-    $ftp_user_pass = 'R<E}(Kko0FTQ/TZ!Q<qR';
+    $ftp_server = 'ftpclient.com.ua';
+    $ftp_user_name = 'test';
+    $ftp_user_pass = '*********';
 
     $handle = fopen($local_file, 'w');
 
