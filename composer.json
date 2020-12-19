@@ -1,0 +1,19 @@
+{
+    "name": "pricescript/andrii",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrii Romanyshyn",
+            "email": "a.romanyshyn@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php-imap/php-imap": "^4.1",
+        "ext-zip": "^1.15",
+        "ext-ftp": "*",
+        "pclzip/pclzip": "^2.8",
+        "box/spout": "^3.1",
+        "phpoffice/phpspreadsheet": "^1.15"
+    }
+}
